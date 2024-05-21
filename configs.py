@@ -3,7 +3,7 @@ import os
 class Config(object):
   API_ID = int(os.environ.get("API_ID", "20247467"))
   API_HASH = os.environ.get("API_HASH", "8ab4a0d75eec6fe40b85144c2c0ff418")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "6711763855:AAHO8TFLxS19cMZ44sBZEH-Z7GlyaUPHl9g")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "7172088789:AAG1VaMDiMO3KwUwo_5N_zUavVybncj5b1Q")
   BOT_USERNAME = os.environ.get("BOT_USERNAME", "@dm_file_store_2_bot")
   DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002043848389"))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "krownlinks.com")
