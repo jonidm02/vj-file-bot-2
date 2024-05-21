@@ -123,7 +123,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/+YUFEObApJqIwMzBl)",
+            await message.reply_text("",
                                      disable_web_page_preview=True)
             return
 
@@ -377,14 +377,14 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Hello Friends [𝙅𝙊𝙄𝙉 𝙉𝙊𝙒](https://t.me/DM_MK_LinkZzz).",
+                        text="",
                         disable_web_page_preview=True
                     )
                     return
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**I like Your Smartness But Don't Be Oversmart! 😑**\n\n",
+                    text="",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -399,7 +399,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Hello friends.",
+                    text="",
                     disable_web_page_preview=True
                 )
                 return
