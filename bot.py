@@ -399,7 +399,9 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥](https://t.me/+YUFEObApJqIwMzBl).",
+                    text="Hello {Mention}       
+                    
+                    I can store private files in specified Channel and otherusers can access it from special link.",
                     disable_web_page_preview=True
                 )
                 return
