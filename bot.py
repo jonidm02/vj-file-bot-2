@@ -399,9 +399,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Hello {Mention}       
-                    
-                    I can store private files in specified Channel and otherusers can access it from special link.",
+                    text="Hello friends.",
                     disable_web_page_preview=True
                 )
                 return
